@@ -1,0 +1,15 @@
+[
+    {
+        "methods": "HTTPS",
+        "command": "cd /root/layer7/ && [SCREEN_CMD] node httpsv2.js [HOST] [TIMES] 8 3"
+    },
+    {
+
+        "methods": "TLS",
+        "command": "cd /root/layer7/ && [SCREEN_CMD] node tls.js [HOST] [TIMES] 8 3 proxy.txt"
+    },
+    {
+        "methods": "STOP",
+        "command": "pkill -f [SCREEN_NAME]"
+    }
+]
